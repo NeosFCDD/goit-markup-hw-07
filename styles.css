@@ -1,6 +1,6 @@
 /* Main settings */
 
-:root {
+/* :root {
     --main-text-color:#212121;
     --blue-text-color:#2196F3;
     --white-text-color:#FFFFFF;
@@ -66,7 +66,7 @@ body {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 /* INDEX PAGE */
 
@@ -76,7 +76,7 @@ body {
     border-bottom: 1px solid var(--stroke-color);
 }
 
-.main-nav {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +90,7 @@ body {
     margin-left: 93px;
 }
 
-.top-contacts {
+.header-contacts {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -98,19 +98,19 @@ body {
     margin-left: auto;
 }
 
-.link {
+.nav-menu__item {
     margin-left: 50px;
 }
 
-.nav-menu .link:first-child {
+.nav-menu__item:first-child {
     margin-left: 0;
 }
 
-.top-contacts .link:first-child {
+.header-contacts__item:first-child {
     margin-left: 0;
 }
 
-.top-contacts .contact-link {
+.header-contacts .contact-link {
     display: flex;
     align-items: center;
 
@@ -127,13 +127,13 @@ body {
     margin-right: 10px;
 }
 
-.top-contacts .contact-link:hover,
-.top-contacts .contact-link:focus
+.header-contacts .contact-link:hover,
+.header-contacts .contact-link:focus
 {
     color: var(--blue-text-color);
 }
 
-.nav-menu .nav-link {
+.nav-menu__link {
     padding-top: 32px;
     padding-bottom: 32px;
     
@@ -145,12 +145,12 @@ body {
     transition: color 250ms var(--main-timing-func);
 }
 
-.nav-link.current {
+.nav-menu__link--current {
     position: relative;
     color: var(--blue-text-color)
 }
 
-.current::after {
+.nav-menu__link--current::after {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -161,12 +161,12 @@ body {
     border-radius: 2px;
 }
 
-.nav-menu .nav-link:hover,
-.nav-menu .nav-link:focus {
+.nav-menu__link:hover,
+.nav-menu__link:focus {
     color: var(--blue-text-color);
 }
 
-.header-logo {
+/* .header-logo {
     padding-top: 24px;
     padding-bottom: 25px;
     
@@ -191,7 +191,7 @@ body {
 .logo:hover,
 .logo:focus {
     color: var(--blue-text-color);
-}
+} */
 
 /* Hero section */
 
@@ -519,7 +519,7 @@ body {
     margin-top: 20px;
 }
 
-.footer-logo {
+/* .footer-logo {
     display: block;
     padding-top: 60px;
     
@@ -531,7 +531,7 @@ body {
     color: var(--white-text-color);
 
     transition: color 250ms var(--main-timing-func);
-}
+} */
 
 .footer-contacts {
     display: block;
