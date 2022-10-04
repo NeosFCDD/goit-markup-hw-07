@@ -594,7 +594,7 @@ body {
   text-transform: uppercase;
 }
 
-.hero-section {
+.hero {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
@@ -643,9 +643,7 @@ body {
   letter-spacing: 0.06em;
   transition: color 250ms var(--main-timing-func);
 }
-
-.hero-button:hover,
-.hero-button:focus {
+.hero-button:hover, .hero-button:focus {
   cursor: pointer;
   color: var(--main-text-color);
 }
