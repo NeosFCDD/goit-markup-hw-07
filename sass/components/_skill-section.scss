@@ -1,0 +1,40 @@
+.our-skills {
+    display: flex;
+    padding-left: 0;
+
+}
+
+.skill-item {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.our-skills>.skill {
+    width: 270px;
+    margin-left: 30px;
+    padding: 0;
+}
+
+.our-skills>.skill:first-child {
+    margin-left: 0px;
+}
+
+.skills-logo {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--add-bgd);
+}
+
+.skill-logo {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill p {
+    line-height: 1.71;
+}
