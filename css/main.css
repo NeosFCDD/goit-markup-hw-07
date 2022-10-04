@@ -325,6 +325,12 @@ body {
   overflow: hidden;
 }
 
+.second-header {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
 .footer-logo, .header-logo {
   text-decoration: none;
   font-family: "Raleway";
@@ -683,28 +689,27 @@ body {
   justify-content: center;
 }
 
-.section .works {
+.works-box {
   margin-top: 94px;
   text-align: center;
 }
 
-.works-img-list {
+.works__grid {
   display: flex;
   padding-left: 0;
   padding-right: 0;
   margin-top: 50px;
 }
 
-.works-img {
+.work-card {
   margin-left: 30px;
   position: relative;
 }
-
-.works-img:first-child {
+.work-card:first-child {
   margin-left: 0;
 }
 
-.works-name {
+.work-card__name {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -724,13 +729,7 @@ body {
   text-align: center;
 }
 
-.second-header {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-}
-
-.our-team {
+.team__grid {
   display: flex;
   margin-top: 50px;
   padding-left: 0;
@@ -743,24 +742,20 @@ body {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-bgd);
 }
-
 .team-mate:first-child {
   margin-left: 0;
 }
 
-.name {
+.team-mate__name {
   margin-top: 30px;
 }
 
-.team-mate > p {
+.team-mate__position {
   margin-top: 10px;
-}
-
-.team-mate p {
   color: var(--add-text-color);
 }
 
-.team-contact {
+.team-mate__contacts {
   display: flex;
   flex-direction: row;
   width: 206px;
@@ -772,15 +767,14 @@ body {
   margin-right: 32px;
 }
 
-.team-contact > li {
+.contact {
   margin-right: 10px;
 }
-
-.team-contact > li:last-child {
+.contact:last-child {
   margin-right: 0;
 }
 
-.contact-box {
+.contact__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -790,16 +784,14 @@ body {
   color: var(--link-color);
   transition: background-color 250ms var(--main-timing-func), color 250ms var(--main-timing-func);
 }
-
-.sr-link {
-  fill: currentColor;
-}
-
-.contact-box:hover,
-.contact-box:focus {
+.contact__link:hover, .contact__link:focus {
   cursor: pointer;
   background-color: var(--button-active-bgd);
   color: var(--white-text-color);
+}
+
+.contact__logo {
+  fill: currentColor;
 }
 
 .clients {

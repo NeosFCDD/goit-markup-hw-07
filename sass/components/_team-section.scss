@@ -3,13 +3,7 @@
     text-align: center;
 }
 
-.second-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-}
-
-.our-team {
+.team__grid {
     display: flex;
     margin-top: 50px;
     padding-left: 0;
@@ -21,25 +15,22 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--main-bgd);
+
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
-.team-mate:first-child {
-    margin-left: 0;
-}
-
-.name {
+.team-mate__name {
     margin-top: 30px;
 }
 
-.team-mate>p {
+.team-mate__position {
     margin-top: 10px;
-}
-
-.team-mate p {
     color: var(--add-text-color);
 }
 
-.team-contact {
+.team-mate__contacts {
     display: flex;
     flex-direction: row;
     width: 206px;
@@ -51,15 +42,15 @@
     margin-right: 32px;
 }
 
-.team-contact>li {
+.contact {
     margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.team-contact>li:last-child {
-    margin-right: 0;
-}
-
-.contact-box {
+.contact__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,15 +61,15 @@
     color: var(--link-color);
 
     transition: background-color 250ms var(--main-timing-func), color 250ms var(--main-timing-func);
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: var(--button-active-bgd);
+        color: var(--white-text-color);
+    }
 }
 
-.sr-link {
+.contact__logo {
     fill: currentColor;
-}
-
-.contact-box:hover,
-.contact-box:focus {
-    cursor: pointer;
-    background-color: var(--button-active-bgd);
-    color: var(--white-text-color);
 }

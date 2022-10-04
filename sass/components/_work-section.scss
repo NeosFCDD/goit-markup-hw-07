@@ -1,25 +1,25 @@
-.section .works {
+.works-box {
     margin-top: 94px;
     text-align: center;
 }
 
-.works-img-list {
+.works__grid {
     display: flex;
     padding-left: 0;
     padding-right: 0;
     margin-top: 50px;
 }
 
-.works-img {
+.work-card {
     margin-left: 30px;
     position: relative;
+
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
-.works-img:first-child {
-    margin-left: 0;
-}
-
-.works-name {
+.work-card__name {
     position: absolute;
     display: flex;
     justify-content: center;
