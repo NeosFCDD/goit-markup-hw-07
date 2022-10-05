@@ -10,10 +10,10 @@
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-}
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.2);
+    .modal {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
 }
 
 .modal {
@@ -46,19 +46,20 @@
     border-radius: 50%;
     background-color: var(--main-bgd);
     transition: fill 250ms var(--main-timing-func);
+
+    &:hover {
+        fill: var(--button-active-bgd);
+        cursor: pointer;
+    }
 }
 
-.modal-close:hover {
-    fill: var(--button-active-bgd);
-    cursor: pointer;
-}
 
 .main-form {
     display: flex;
     flex-direction: column;
 }
 
-.main-form>p {
+.main-form__item {
     padding-top: 40px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -89,9 +90,14 @@
     padding: 0;
     padding-left: 42px;
     transition: border 250ms var(--main-timing-func);
+
+    &:focus {
+        outline: 0;
+        border: 1px solid var(--blue-text-color);
+    }
 }
 
-.comment-form {
+.form-comment {
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -99,6 +105,11 @@
     resize: none;
     padding: 12px 16px;
     transition: border 250ms var(--main-timing-func);
+
+    &:focus {
+        outline: 0;
+        border: 1px solid var(--blue-text-color);
+    }
 }
 
 .form-name {
@@ -109,7 +120,7 @@
     color: var(--add-text-color);
 }
 
-.modal-icon {
+.form-icon {
     position: absolute;
     display: inline-block;
     width: 18px;
@@ -119,6 +130,10 @@
     transform: translateY(-50%);
     color: currentColor;
     transition: fill 250ms var(--main-timing-func);
+
+    .form-input:focus~& {
+        fill: var(--blue-text-color);
+    }
 }
 
 .checkbox-label {
@@ -129,7 +144,7 @@
     margin-top: 20px;
 }
 
-.checkbox {
+.checkbox-input {
     appearance: none;
     position: absolute;
 }
@@ -145,11 +160,11 @@
     margin-right: 7px;
     fill: var(--main-bgd);
     transition: border-color 250ms var(--main-timing-func), background-color 250ms var(--main-timing-func);
-}
 
-.checkbox:checked+.checkbox-icon {
-    border-color: transparent;
-    background-color: var(--button-active-bgd);
+    .checkbox-input:checked+& {
+        border-color: transparent;
+        background-color: var(--button-active-bgd);
+    }
 }
 
 .contract-terms {
@@ -157,22 +172,7 @@
     margin-left: 5px;
 }
 
-.form-input:focus {
-    outline: 0;
-    border: 1px solid var(--blue-text-color);
-}
-
-.form-input:focus~.modal-icon {
-    fill: var(--blue-text-color);
-}
-
-.comment-form:focus {
-    outline: 0;
-    border: 1px solid var(--blue-text-color);
-}
-
-
-.send-btn {
+.send-button {
     width: 200px;
     height: 50px;
     color: var(--white-text-color);
@@ -190,9 +190,9 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     transition: color 250ms var(--main-timing-func);
-}
 
-.send-btn:hover {
-    cursor: pointer;
-    color: var(--main-text-color);
+    &:hover {
+        cursor: pointer;
+        color: var(--main-text-color);
+    }
 }

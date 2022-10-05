@@ -40,16 +40,16 @@
     <main>
         <section class="container section">
             <h1 class="hide">Portfolio</h1>
-            <div class="filter-buttons">
-                <ul class="filter-buttons-list list">
-                    <li class="btn"><button class="filter-button" type="button">Усі</button></li>
-                    <li class="btn"><button class="filter-button" type="button">Веб-сайти</button></li>
-                    <li class="btn"><button class="filter-button" type="button">Додатки</button></li>
-                    <li class="btn"><button class="filter-button" type="button">Дизайн</button></li>
-                    <li class="btn"><button class="filter-button" type="button">Маркетинг</button></li>
+            <div class="product-filter">
+                <ul class="filter-list list">
+                    <li class="filter-item"><button class="filter-button" type="button">Усі</button></li>
+                    <li class="filter-item"><button class="filter-button" type="button">Веб-сайти</button></li>
+                    <li class="filter-item"><button class="filter-button" type="button">Додатки</button></li>
+                    <li class="filter-item"><button class="filter-button" type="button">Дизайн</button></li>
+                    <li class="filter-item"><button class="filter-button" type="button">Маркетинг</button></li>
                 </ul>
             </div>
-            <div class="works-gallery">
+            <div class="product-gallery">
                 <ul class="product-grid list">
                     <li class="product">
                         <div class="product__thumb">
@@ -192,51 +192,51 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <div class="footer-box">
-                <a class="footer-logo" href="./index.html"><span class="logo">Web</span>Studio</a>
+        <div class="footer__box container">
+            <div class="footer__address">
+                <a class="footer-logo" href="./index.html"><span class="logo-item">Web</span>Studio</a>
                 <address>
                     <ul class="footer-data list">
-                        <li><a class="footer-address" href="https://goo.gl/maps/G24wfoszBpts4gNg6" target="_blank"
+                        <li><a class="footer-data__address" href="https://goo.gl/maps/G24wfoszBpts4gNg6" target="_blank"
                                 rel="norefferer noopener">м. Київ, пр-т Лесі Українки,
                                 26</a></li>
-                        <li><a class="footer-contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li><a class="footer-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        <li><a class="footer-data__contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="footer-data__contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>
-            <div class="footer-links">
-                <p>ПРИЄДНУЙТЕСЬ</p>
-                <ul class="site-links list">
-                    <li><a href="" aria-label="instagram" class="link-box">
-                            <svg class="sr-link" width="20px" height="20px">
+            <div class="footer__links">
+                <p class="footer-item">ПРИЄДНУЙТЕСЬ</p>
+                <ul class="studio-online list">
+                    <li class="studio-box"><a href="" aria-label="instagram" class="studio-link">
+                            <svg class="social-networks-logo" width="20px" height="20px">
                                 <use href="./img/sprite.svg#icon-instagram"></use>
                             </svg></a></li>
-                    <li><a href="" aria-label="twitter" class="link-box">
-                            <svg class="sr-link" width="20px" height="20px">
+                    <li class="studio-box"><a href="" aria-label="twitter" class="studio-link">
+                            <svg class="social-networks-logo" width="20px" height="20px">
                                 <use href="./img/sprite.svg#icon-twitter"></use>
                             </svg></a></li>
-                    <li><a href="" aria-label="facebook" class="link-box">
-                            <svg class="sr-link" width="20px" height="20px">
+                    <li class="studio-box"><a href="" aria-label="facebook" class="studio-link">
+                            <svg class="social-networks-logo" width="20px" height="20px">
                                 <use href="./img/sprite.svg#icon-facebook"></use>
                             </svg></a></li>
-                    <li><a href="" aria-label="linkedin" class="link-box">
-                            <svg class="sr-link" width="20px" height="20px">
+                    <li class="studio-box"><a href="" aria-label="linkedin" class="studio-link">
+                            <svg class="social-networks-logo" width="20px" height="20px">
                                 <use href="./img/sprite.svg#icon-linkedin"></use>
                             </svg></a></li>
                 </ul>
             </div>
-            <div class="subscribe">
-                <p>Підпишіться на розсилку</p>
-                <label class="footer-form">
-                    <input type="email" name="subscribe" placeholder="E-mail">
-                    <button type="submit">Підписатися
-                        <svg class="send-icon" width="24px" height="24px">
+            <form class="subscribe-form">
+                <p class="footer-item">Підпишіться на розсилку</p>
+                <label class="subscribe-form__box">
+                    <input class="subscribe-form__input" type="email" name="subscribe" placeholder="E-mail">
+                    <button class="subscribe-form__button" type="submit">Підписатися
+                        <svg class="subscribe-form__icon" width="24px" height="24px">
                             <use href="./img/sprite.svg#send"></use>
                         </svg>
                     </button>
                 </label>
-            </div>
+            </form>
         </div>
     </footer>
 </body>
