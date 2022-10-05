@@ -1,8 +1,8 @@
-.clients {
+.clients-box {
     text-align: center;
 }
 
-.clients-list {
+.clients {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -11,15 +11,15 @@
     padding-top: 50px;
 }
 
-.clients-list>li {
+.clients__card {
     margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.clients-list>li:last-child {
-    margin-right: 0;
-}
-
-.client-card {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,15 +30,15 @@
     border-radius: 4px;
     cursor: pointer;
 
-    transition: border 250ms var(--main-timing-func), color 250ms var(--main-timing-func);
+    transition: border 250ms var(--main-timing-func), $colorTransition;
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--button-active-bgd);
+        color: var(--button-active-bgd);
+    }
 }
 
-.client-card:hover,
-.client-card:focus {
-    border: 1px solid var(--button-active-bgd);
-    color: var(--button-active-bgd);
-}
-
-.client-link {
+.clients__logo {
     fill: currentColor;
 }

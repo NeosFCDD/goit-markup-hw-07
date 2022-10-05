@@ -794,11 +794,11 @@ body {
   fill: currentColor;
 }
 
-.clients {
+.clients-box {
   text-align: center;
 }
 
-.clients-list {
+.clients {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -807,15 +807,14 @@ body {
   padding-top: 50px;
 }
 
-.clients-list > li {
+.clients__card {
   margin-right: 30px;
 }
-
-.clients-list > li:last-child {
+.clients__card:last-child {
   margin-right: 0;
 }
 
-.client-card {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -825,16 +824,14 @@ body {
   border: 1px solid var(--link-color);
   border-radius: 4px;
   cursor: pointer;
-  transition: border 250ms var(--main-timing-func), color 250ms var(--main-timing-func);
+  transition: border 250ms var(--main-timing-func), color 0ms var(--main-timing-func);
 }
-
-.client-card:hover,
-.client-card:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--button-active-bgd);
   color: var(--button-active-bgd);
 }
 
-.client-link {
+.clients__logo {
   fill: currentColor;
 }
 
