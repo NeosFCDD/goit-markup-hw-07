@@ -341,7 +341,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  transition: color 0ms var(--main-timing-func);
+  transition: color 250ms var(--main-timing-func);
 }
 .footer-logo:hover, .header-logo:hover {
   color: var(--blue-text-color);
@@ -397,7 +397,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: color 0ms var(--main-timing-func);
+  transition: color 250ms var(--main-timing-func);
 }
 .nav-menu__link:hover, .nav-menu__link:focus {
   color: var(--blue-text-color);
@@ -438,7 +438,7 @@ body {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.02em;
-  transition: color 0ms var(--main-timing-func);
+  transition: color 250ms var(--main-timing-func);
 }
 .header-link__icon {
   fill: currentColor;
@@ -630,7 +630,7 @@ body {
   line-height: 1.88;
   align-items: center;
   letter-spacing: 0.06em;
-  transition: color 0ms var(--main-timing-func);
+  transition: color 250ms var(--main-timing-func);
 }
 .hero__button:hover, .hero__button:focus {
   cursor: pointer;
@@ -803,7 +803,7 @@ body {
   border: 1px solid var(--link-color);
   border-radius: 4px;
   cursor: pointer;
-  transition: border 250ms var(--main-timing-func), color 0ms var(--main-timing-func);
+  transition: border 250ms var(--main-timing-func), color 250ms var(--main-timing-func);
 }
 .clients__link:hover, .clients__link:focus {
   border: 1px solid var(--button-active-bgd);

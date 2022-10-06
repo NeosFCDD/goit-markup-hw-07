@@ -14,7 +14,7 @@
     --main-timing-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-$colorTransition: color 0ms var(--main-timing-func);
+$colorTransition: color 250ms var(--main-timing-func);
 
 h1,
 h2,
